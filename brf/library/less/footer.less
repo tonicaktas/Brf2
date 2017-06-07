@@ -1,0 +1,167 @@
+footer {
+  color: black !important;
+
+  font-weight:200;
+  background:linear-gradient(rgba(255,255,255,.9),
+                             rgba(255,255,255,1)),
+                             url('../../img/hem-bg.jpg');
+
+}
+
+.west-side {
+  text-align: center;
+
+  label {
+    font-weight:200;
+  }
+
+
+    textarea {
+      background: transparent;
+      border: none;
+      border:1px solid rgba(0,0,0,.3);
+      width: 585px;
+      height: 150px;
+
+
+      &:focus {
+
+        border-color: rgba(161, 192, 56, 0.8);
+        box-shadow: 0 1px 1px rgba(161, 192, 56, 0.075) inset, 0 0 8px rgba(161, 192, 56, 0.6);
+        outline: 0 none;
+      }
+
+  }
+
+  .wpcf7-submit {
+    width:585px;
+    background: #a1c038;
+    border:none;
+    margin-left:20px;
+    color:white;
+    transition: .5s;
+    height:50px;
+
+
+
+  }
+
+}
+
+.east-side {
+  text-align: center;
+
+  p {
+    margin-top:25px;
+  }
+
+  label {
+    font-weight:200;
+    width:100%;
+
+    span {
+
+
+
+      textarea {
+        width:100%;
+        height:142px;
+        background: transparent;
+        border:1px solid black;
+
+
+        &:focus {
+
+          border-color: rgba(161, 192, 56, 0.8);
+          box-shadow: 0 1px 1px rgba(161, 192, 56, 0.075) inset, 0 0 8px rgba(161, 192, 56, 0.6);
+          outline: 0 none;
+        }
+      }
+    }
+  }
+
+
+  p {
+    input {
+      background: #a1c038;
+      transition: .5s;
+      border:none;
+
+
+      &:hover {
+        background: black;
+        color:#a1c038;
+      }
+
+
+    }
+  }
+
+  .wpcf7-submit {
+    width:100%;
+  }
+}
+
+.rubrik {
+  margin-bottom:70px;
+  h3 {
+    font-weight:200;
+    text-align: center;
+
+    &::after {
+      margin-left:15%;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 80%;
+      margin-top: 16px;
+      background: -webkit-linear-gradient(left,rgba(161, 192, 56,1),rgba(0,0,0,0));
+      background: linear-gradient(to right,rgba(161, 192, 56,.35),rgba(0,0,0,0));
+    }
+  }
+
+}
+
+.tel {
+  margin-top:20px;
+}
+
+.west-side {
+  border-left:1px solid black;
+
+}
+
+input[type='text'],
+input[type="email"] {
+  background: transparent;
+  border: none;
+  border:1px solid rgba(0,0,0,.3);
+  height:50px;
+
+
+  &:focus {
+
+    border-color: rgba(161, 192, 56, 0.8);
+    box-shadow: 0 1px 1px rgba(161, 192, 56, 0.075) inset, 0 0 8px rgba(161, 192, 56, 0.6);
+    outline: 0 none;
+  }
+}
+
+div.wpcf7-mail-sent-ok {
+    border-bottom: 2px solid #398f14;
+    float: right;
+    background: green;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(0,0,0,.3);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(0,0,0,.3);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0,0,0,.3);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(0,0,0,.3);
+}

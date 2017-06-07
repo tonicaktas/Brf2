@@ -1,0 +1,201 @@
+/* Demo */
+.slickWindow * {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.slickModal .slickWindow {
+    overflow: auto;
+}
+.slickModal .slickWindow .close.icon {
+    opacity: 0.5;
+}
+.slickModal .slickWindow .close.icon:hover {
+    opacity: 1;
+}
+.slickModal .slickWindow .close.icon:before,
+.slickModal .slickWindow .close.icon:after {
+	background: #fff;
+}
+.slickModal .slickWindow .login,
+.slickModal .slickWindow .register {
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #44b7ab;
+    border-radius: 6px;
+    padding: 50px;
+    transition: all 0.2s ease;
+}
+.slickModal .slickWindow > div.hidden {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    opacity: 0;
+    visibility: hidden;
+}
+.slickModal .slickWindow > div .clrfx {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    content: "";
+    margin: 12px 0;
+}
+.slickModal .slickWindow > div .title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.slickModal .slickWindow > div a {
+    color: #fff;
+}
+.slickModal .slickWindow > div form {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+}
+.slickModal .slickWindow > div form .row {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.slickModal .slickWindow > div form .row:first-of-type {
+    margin-top: 20px;
+}
+.slickModal .slickWindow > div form .row .icon {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    content: "";
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 18px;
+    height: 18px;
+}
+.slickModal .slickWindow > div form .row .icon.user {
+    background-image: url("img/user.svg");
+}
+.slickModal .slickWindow > div form .row .icon.email {
+    background-image: url("img/email.svg");
+}
+.slickModal .slickWindow > div form .row .icon.lock {
+    background-image: url("img/lock.svg");
+}
+.slickModal .slickWindow > div form .row input[type="text"],
+.slickModal .slickWindow > div form .row input[type="password"] {
+    background: transparent;
+    background: none;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #bbb;
+    -webkit-box-shadow: 0 0 0px 1000px #44b7ab inset;
+    font-size: 13px;
+    color: #fff;
+    padding: 8px 8px 8px 40px;
+}
+.slickModal .slickWindow > div form .row input::-webkit-input-placeholder {
+    color: #fff;
+}
+.slickModal .slickWindow > div form .row input::-moz-input-placeholder {
+    color: #fff;
+}
+.slickModal .slickWindow > div form .row input::-ms-input-placeholder {
+    color: #fff;
+}
+.slickModal .slickWindow > div form .row input::input-placeholder {
+    color: #fff;
+}
+.slickModal .slickWindow > div form .styledCheck {
+    display: inline-block;
+    float: left;
+}
+.slickModal .slickWindow > div form .styledCheck input {
+    display: none;
+}
+.slickModal .slickWindow > div form .styledCheck label {
+    font-size: 10px;
+    line-height: 16px;
+    position: relative;
+    cursor: pointer;
+}
+.slickModal .slickWindow > div form .styledCheck label:before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 4px;
+    vertical-align: middle;
+    margin: -2px 10px 0 0;
+}
+.slickModal .slickWindow > div form .styledCheck label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    display: none;
+}
+.slickModal .slickWindow > div form .styledCheck input:checked + label:after {
+    display: block;
+}
+.slickModal .slickWindow > div form .forgotPass {
+    float: right;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.slickModal .slickWindow > div form .forgotPass:hover {
+    text-decoration: underline;
+}
+.slickModal .slickWindow > div .action,
+.slickModal .slickWindow > div .action2 {
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    margin: 30px 0 0 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.slickModal .slickWindow > div .action {
+    background: #444;
+}
+.slickModal .slickWindow > div .action2 {
+    border: solid 2px #fff;
+}
+.slickModal .slickWindow > div .action:hover,
+.slickModal .slickWindow > div .action2:hover {
+    opacity: 0.7;
+}
+.slickModal .slickWindow > div .info,
+.slickModal .slickWindow > div .back {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    opacity: 0.7;
+}
+.slickModal .slickWindow > div .back {
+    cursor: pointer;
+}
+.slickModal .slickWindow > div .back:hover {
+    opacity: 1;
+    text-decoration: underline;
+}

@@ -1,0 +1,196 @@
+/* Demo */
+.slickWindow * {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.slickWindow {
+    overflow: auto;
+}
+.slickWindow::-webkit-scrollbar {
+    width: 6px;
+    height: 2px;
+}
+.slickWindow::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+.slickWindow::-webkit-scrollbar-thumb {
+    background: #acacac;
+    border: 0px none #ffffff;
+    border-radius: 0;
+}
+.slickWindow::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+.slickWindow::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+.slickWindow::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border: 0px none #ffffff;
+    border-radius: 0;
+}
+.slickWindow::-webkit-scrollbar-track:hover {
+    background: #f0f0f0;
+}
+.slickWindow::-webkit-scrollbar-track:active {
+    background: #f0f0f0;
+}
+.slickWindow::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.slickWindow .actions {
+	display: inline-block;
+    width: 100%;
+    padding: 28px 36px 36px 36px;
+}
+.slickWindow .action {
+    border: #42abb5;
+    font-weight: 800;
+    border: solid 1px #333;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.slickWindow .action:hover {
+    background: #42abb5;
+    border-color: #42abb5;
+    color: #fff;
+}
+.slickWindow .actions .shop {
+    text-align: center;
+    font-size: 11px;
+    padding-top: 10px;
+}
+.slickWindow .actions .shop:hover {
+    opacity: 0.6;
+}
+.slickWindow .emptyCart {
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 36px;
+    display: none;
+    color: #bbb;
+}
+.slickWindow .emptyCart .action {
+    margin-top: 20px;
+    color: #222;
+}
+.slickWindow .emptyCart .action:hover {
+    color: #fff;
+}
+.slickWindow .cartItems {
+    display: inline-block;
+    width: 100%;
+    overflow: auto;
+    padding: 36px 36px 0 36px;
+}
+.slickWindow .cartItems .item {
+    display: inline-block;
+    background: #fff;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    transition: all 0.3s ease;
+    max-height: 150px;
+}
+.slickWindow .cartItems .item.hidden {
+    max-height: 0;
+    margin: 0;
+}
+.slickWindow .cartItems .item img,
+.slickWindow .cartItems .item .data {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+.slickWindow .cartItems .item .data {
+    padding-left: 30px;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+.slickWindow .cartItems .item .data:hover {
+    opacity: 1;
+}
+.slickWindow .cartItems .item .data:hover .remove {
+    opacity: 1;
+}
+.slickWindow .cartItems .item .data .title {
+    font-weight: 800;
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+.slickWindow .cartItems .item .data > div span {
+    font-weight: 800;
+    text-align: right;
+    float: right;
+    color: #42abb5;
+}
+.slickWindow .cartItems .item .data .attribute {
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+    font-size: 9px;
+    color: #333;
+    opacity: 0.8;
+}
+.slickWindow .cartItems .item .data .attribute span {
+    padding-left: 4px;
+}
+.slickWindow .cartItems .item .data .qty {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 14px;
+}
+.slickWindow .cartItems .item .data .qty span {
+    display: inline-block;
+    font-weight: normal;
+}
+.slickWindow .cartItems .item .data .price {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.slickWindow .cartItems .item .data .remove {
+    font-size: 10px;
+    cursor: pointer;
+    opacity: 0;
+}
+.slickWindow .cartItems .item .data .remove:hover {
+    text-decoration: underline;
+}
+.slickWindow .total {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    color: #999;
+    text-transform: uppercase;
+    padding: 20px 36px 0 36px;
+    border-top: solid 1px #eee;
+}
+.slickWindow .total span {
+    font-weight: 800;
+    color: #333;
+    float: right;
+    text-align: right;
+}
+.slickWindow .info {
+    font-size: 10px;
+    padding: 4px 36px 0 36px;
+    opacity: 0.6;
+}
+.slickWindow .info span {
+    font-weight: 800;
+}
